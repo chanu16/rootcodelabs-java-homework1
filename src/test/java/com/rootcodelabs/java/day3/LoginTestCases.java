@@ -11,6 +11,7 @@ import static org.assertj.core.api.Assertions.*;
 public class LoginTestCases {
     private WebDriver driver;
 
+
     @BeforeClass
     public void beforeClass(){
         //Create a browser driver
@@ -24,11 +25,6 @@ public class LoginTestCases {
 
         //Navigate to URL
         driver.get("https://www.saucedemo.com/");
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
         //maximize the window
         driver.manage().window().maximize();
